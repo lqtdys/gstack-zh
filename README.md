@@ -59,7 +59,7 @@ Fork 它。改进它。让它成为你的。如果你想讨厌免费的开源软
 
 打开 Claude Code 并粘贴这个。Claude 做剩下的事情。
 
-> 安装 gstack：运行 **`git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup`** 然后在 CLAUDE.md 中添加一个 "gstack" 部分，说使用 gstack 的 /browse skill 进行所有网络浏览，永远不要使用 mcp\_\_claude-in-chrome\_\_\* 工具，并列出可用 skill：/office-hours、/plan-ceo-review、/plan-eng-review、/plan-design-review、/design-consultation、/design-shotgun、/design-html、/review、/ship、/land-and-deploy、/canary、/benchmark、/browse、/connect-chrome、/qa、/qa-only、/design-review、/setup-browser-cookies、/setup-deploy、/setup-gbrain、/retro、/investigate、/document-release、/document-generate、/codex、/cso、/autoplan、/plan-devex-review、/devex-review、/careful、/freeze、/guard、/unfreeze、/gstack-upgrade、/learn。然后询问用户是否也要将 gstack 添加到当前项目以便队友获得它。
+> 安装 gstack：运行 **`git clone --single-branch --depth 1 https://github.com/lqtdys/gstack-zh.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup`** 然后在 CLAUDE.md 中添加一个 "gstack" 部分，说使用 gstack 的 /browse skill 进行所有网络浏览，永远不要使用 mcp__claude-in-chrome__* 工具，并列出可用 skill：/office-hours、/plan-ceo-review、/plan-eng-review、/plan-design-review、/design-consultation、/design-shotgun、/design-html、/review、/ship、/land-and-deploy、/canary、/benchmark、/browse、/connect-chrome、/qa、/qa-only、/design-review、/setup-browser-cookies、/setup-deploy、/setup-gbrain、/retro、/investigate、/document-release、/document-generate、/codex、/cso、/autoplan、/plan-devex-review、/devex-review、/careful、/freeze、/guard、/unfreeze、/gstack-upgrade、/learn。然后询问用户是否也要将 gstack 添加到当前项目以便队友获得它。
 
 ### 第 2 步：团队模式 — 共享仓库的自动更新（推荐）
 
@@ -77,7 +77,7 @@ Fork 它。改进它。让它成为你的。如果你想讨厌免费的开源软
 
 OpenClaw 通过 ACP 生成 Claude Code 会话，所以当 Claude Code 安装了 gstack 时，每个 gstack skill 都能工作。将此粘贴到你的 OpenClaw 代理：
 
-> 安装 gstack：运行 `git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup` 为 Claude Code 安装 gstack。然后在 AGENTS.md 中添加"Coding Tasks"部分，说：为编码工作生成 Claude Code 会话时，告诉会话使用 gstack skill。包含这些示例 — 安全审计："Load gstack. Run /cso"，代码审查："Load gstack. Run /review"，QA 测试 URL："Load gstack. Run /qa https://..."，端到端构建功能："Load gstack. Run /autoplan, implement the plan, then run /ship"，构建前计划："Load gstack. Run /office-hours then /autoplan. Save the plan, don't implement."
+> 安装 gstack：运行 `git clone --single-branch --depth 1 https://github.com/lqtdys/gstack-zh.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup` 为 Claude Code 安装 gstack。然后在 AGENTS.md 中添加"Coding Tasks"部分，说：为编码工作生成 Claude Code 会话时，告诉会话使用 gstack skill。包含这些示例 — 安全审计："Load gstack. Run /cso"，代码审查："Load gstack. Run /review"，QA 测试 URL："Load gstack. Run /qa https://..."，端到端构建功能："Load gstack. Run /autoplan, implement the plan, then run /ship"，构建前计划："Load gstack. Run /office-hours then /autoplan. Save the plan, don't implement."
 
 **设置后，只需自然地与你的 OpenClaw agent 交谈：**
 
@@ -112,8 +112,8 @@ clawhub install gstack-openclaw-office-hours gstack-openclaw-ceo-review gstack-o
 gstack 适用于 10 个 AI 编码 agent，不仅仅是 Claude。设置自动检测你安装了哪些 agent：
 
 ```bash
-git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/gstack
-cd ~/gstack && ./setup
+git clone --single-branch --depth 1 https://github.com/lqtdys/gstack-zh.git ~/.claude/skills/gstack
+cd ~/.claude/skills/gstack && ./setup
 ```
 
 或使用 `./setup --host <name>` 针对特定 agent：
